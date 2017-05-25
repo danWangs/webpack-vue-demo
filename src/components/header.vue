@@ -14,17 +14,20 @@
 	</div>
 </template>
 
-<script>
+<script type="text/babel">
+    require("less/common/header.less");
 </script>
 
 <style lang="less" rel="stylesheet/less" scoped="">
-	.nav-wrapper{
-		.nav-box{
-			ul{
-				li{
-					
-				}
+.nav-wrapper{
+	.nav-box{
+		ul{
+			li{
+				float:left;
+				background-color: #eee;
+				list-style: none;
 			}
 		}
 	}
+}
 </style>
