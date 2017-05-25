@@ -1,9 +1,10 @@
-//require("babel-polyfill");
+require("babel-polyfill");
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import routerMap from 'config/routers'
 //import app from './app.vue'
-import hmt from 'hmt'
+//import hmt from 'hmt'
+require("assets/less/common/reset.css")
 
 let isDebug = process.env.NODE_ENV !== 'production';
 

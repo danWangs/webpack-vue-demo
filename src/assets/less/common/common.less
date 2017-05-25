@@ -1,0 +1,224 @@
+﻿html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 62.5%;
+  font: inherit;
+  font-family: "Helvetica Neue", Helvetica, STHeiTi, sans-serif;
+  vertical-align: baseline;
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.pull-left {
+  float: left;
+}
+
+.pull-right {
+  float: right;
+}
+
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+
+.clearfix {
+  display: inline-block;
+}
+
+/* start commented backslash hack \*/
+* html .clearfix {
+  height: 1%;
+}
+
+.clearfix {
+  display: block;
+}
+
+/* close commented backslash hack */
+
+html, body {
+  height: 100%;
+}
+
+#app {
+  height: 100%;
+  background-color: #f1eef5;
+  box-sizing: border-box;
+  padding-top: 60px;
+}
+
+.border-radius(@num) {
+  border-radius: @num;
+}
+
+a {
+  text-decoration: none;
+}
+
+@btnColor: #55bcf6;
+@btnColorHover: #52a6d6;
+.section-detail-item {
+  background-color: #fff;
+  overflow: hidden;
+  padding: 0.8rem;
+  position: relative;
+
+  .section-title {
+    padding: 1rem 0;
+    i {
+      color: #bebebe;
+      font-size: 1.0rem;
+    }
+    span {
+      position: relative;
+      padding-left: 1rem;
+      font-size: 1.1rem;
+      &:after {
+        content: "";
+        position: absolute;
+        width: 0.4rem;
+        height: 1rem;
+        top: 0;
+        left: 0;
+        background-color: #ff764c;
+        border-radius: 2px;
+      }
+    }
+    .btn-inspect {
+      border: 0;
+      background: #fff;
+      padding: 0 20px;
+      background-color: @btnColor;
+      color: #fff;
+      font-size: .9rem;
+      .border-radius(2px);
+      line-height: 2rem;
+      &:active {
+        background-color: @btnColorHover;
+      }
+    }
+  }
+  .section-content {
+    padding-top: 0.6rem;
+  }
+}
+
+.btn-goback {
+  line-height: 2.6rem;
+  height: 2.6rem;
+  border: 0;
+  margin: 2rem auto;
+  color: #fff;
+  background-color: #3bbd92;
+  width: 90%;
+  font-size: 1rem;
+  border-radius: 3px;
+  display: block;
+}
+
+.modal-dialog {
+  @ty: translateY(200%);
+  -webkit-transform: @ty;
+  -moz-transform: @ty;
+  -o-transform: @ty;
+  transform: @ty;
+
+  @transition: all 0.5s;
+  -webkit-transition: @transition;
+  -moz-transition: @transition;
+  -o-transition: @transition;
+  transition: @transition;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, .8);
+  overflow: hidden;
+  display: block;
+  z-index: 10000;
+}
+.modal-dialog-show{
+  @ty: translateY(0);
+  -webkit-transform: @ty;
+  -moz-transform: @ty;
+  -o-transform: @ty;
+  transform: @ty;
+}
+
+.t-table {
+  display: table;
+  width: 100%;
+  .row {
+    display: table-row;
+    &:first-child {
+      .cell-left, .cell-right {
+        border-top: none;
+      }
+    }
+    .cell-left, .cell-right {
+      border-top: 1px solid #e7e7e7;
+      display: table-cell;
+      width: 40%;
+      font-size: .9rem;
+      line-height: 1.6rem;
+      padding: .8rem 0;
+      word-break:break-all;
+    }
+    .cell-left {
+      color: #666;
+      padding-left: .2rem;
+    }
+    .cell-right {
+      width: 60%;
+      color: #999;
+    }
+  }
+}

@@ -1,7 +1,7 @@
 <template>
 	<div class="nav-wrapper">
 		<div class="section">
-			<div class="left-logo"><img src="" alt="" /></div>
+			<div class="left-logo"></div>
 			<div class="nav-box">
 				<ul>
 					<li>item1</li>
@@ -17,5 +17,14 @@
 <script>
 </script>
 
-<style>
+<style lang="less" rel="stylesheet/less" scoped="">
+	.nav-wrapper{
+		.nav-box{
+			ul{
+				li{
+					
+				}
+			}
+		}
+	}
 </style>

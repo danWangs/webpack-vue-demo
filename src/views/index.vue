@@ -10,12 +10,4 @@
 </script>
 
 <style lang="less" rel="stylesheet/less" scoped="">
-	.bg{
-		background-color: #eee;
-		width:100px;
-		height:60px;
-		.box{
-			color:#555;
-		}
-	}
 </style>
