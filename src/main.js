@@ -22,5 +22,10 @@ let router = new VueRouter({
 
 
 let app = Vue.extend({});
+
+//注册全局组件
+Vue.component('app-header', (resolve) => {
+    require(['./components/header.vue'], resolve);
+});
 routerMap(router);
 router.start(app, "#app");

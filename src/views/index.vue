@@ -1,4 +1,5 @@
 <template>
+	<app-header></app-header>
 	<div class="bg">
 		<div class="box">sfd</div>
 	</div>
