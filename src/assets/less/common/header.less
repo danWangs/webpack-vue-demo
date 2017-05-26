@@ -1,0 +1,25 @@
+@import "variable.less";
+.nav-wrapper{
+    .nav-boxer{
+        display: flex;
+    }
+    .nav-box{
+        height:1.5625rem;
+        background-color:#eee;
+        flex:1;
+        ul{
+            display:flex;
+            align-items: center;
+            height:100%;
+            li{
+                flex:1;
+                height:100%;
+                line-height: 1.5625rem;
+                text-align: center;
+                background-color: @nav_bg;
+                list-style: none;
+                font-size:@ft12;
+            }
+        }
+    }
+}

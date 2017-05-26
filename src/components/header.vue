@@ -1,6 +1,6 @@
 <template>
 	<div class="nav-wrapper">
-		<div class="section">
+		<div class="section nav-boxer">
 			<div class="left-logo"></div>
 			<div class="nav-box">
 				<ul>
@@ -19,15 +19,4 @@
 </script>
 
 <style lang="less" rel="stylesheet/less" scoped="">
-.nav-wrapper{
-	.nav-box{
-		ul{
-			li{
-				float:left;
-				background-color: #eee;
-				list-style: none;
-			}
-		}
-	}
-}
 </style>
