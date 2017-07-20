@@ -12,6 +12,12 @@ export default (router)=> {
             component(resolve) {
                 require(['../views/newsDetail.vue'], resolve);
             }
+        },
+        '/editRow': {
+            name: 'edit_row',
+            component(resolve) {
+                require(['../views/editRow.vue'], resolve);
+            }
         }
     });
 }

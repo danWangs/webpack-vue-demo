@@ -18,6 +18,7 @@ html, body, div, span, object,a,button, iframe,input, h1, h2, h3, h4, h5, h6, p,
 /* 16px = 0.5rem */
 *{
 	box-sizing: border-box;
+	word-break: break-all;
 }
 body {
 	line-height: 1;
@@ -26,6 +27,9 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 	display: block;
 }
 nav ul {
+	list-style: none;
+}
+ul li{
 	list-style: none;
 }
 blockquote, q {
@@ -86,11 +90,11 @@ input, select {
 
 @font-face {
 	font-family: 'iconfont';  /* project id 108249 */
-	src: url('//at.alicdn.com/t/font_4q53o4hcs99kke29.eot');
-	src: url('//at.alicdn.com/t/font_4q53o4hcs99kke29.eot?#iefix') format('embedded-opentype'),
-	url('//at.alicdn.com/t/font_4q53o4hcs99kke29.woff') format('woff'),
-	url('//at.alicdn.com/t/font_4q53o4hcs99kke29.ttf') format('truetype'),
-	url('//at.alicdn.com/t/font_4q53o4hcs99kke29.svg#iconfont') format('svg');
+	src: url('//at.alicdn.com/t/font_s004acqhxsss8aor.eot');
+	src: url('//at.alicdn.com/t/font_s004acqhxsss8aor.eot?#iefix') format('embedded-opentype'),
+	url('//at.alicdn.com/t/font_s004acqhxsss8aor.woff') format('woff'),
+	url('//at.alicdn.com/t/font_s004acqhxsss8aor.ttf') format('truetype'),
+	url('//at.alicdn.com/t/font_s004acqhxsss8aor.svg#iconfont') format('svg');
 }
 
 .iconfont {

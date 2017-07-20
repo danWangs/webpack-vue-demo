@@ -34,7 +34,6 @@
 					rightTitle:''
 				}
 			}
-			console.log(this.headerData)
 			if(this.headerData.showBack === undefined){
 				this.headerData.showBack=true
 			}

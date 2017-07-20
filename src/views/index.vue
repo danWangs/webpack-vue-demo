@@ -4,7 +4,7 @@
 	<div class="bg">
 		<div class="list-wrapper">
 			<ul class="menu-list">
-				<li v-for="item in itemList">
+				<li v-for="item in itemList" v-link="{name:item.linkUrl}">
 					<img v-bind:src="item.itemUrl">
 					{{item.itemName}}
 				</li>
