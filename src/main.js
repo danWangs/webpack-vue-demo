@@ -6,7 +6,7 @@ import routerMap from 'config/routers'
 //import hmt from 'hmt'
 
 require("less/common/reset.css")
-
+require("less/common/common.less")
 
 let isDebug = process.env.NODE_ENV !== 'production';
 

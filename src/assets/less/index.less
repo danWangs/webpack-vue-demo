@@ -1,9 +1,39 @@
+@import "/common/variable.less";
 .bg{
-    background-color: #eee;
-    width:100px;
-    height:40px;
+    .list-wrapper{
+
+        ul.menu-list{
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            li{
+                list-style: none;
+                width: calc(~"(100%)/3");
+                height: 120px;
+                text-align: center;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                border-bottom: 1px solid #eee;
+                border-right: 1px solid #eee;
+                background-color: @white;
+                img{
+                    width: 40px;
+                    height: 40px;
+                }
+                &:nth-child(3n){
+                    border-right: 0;
+                }
+            }
+        }
+    }
     .box{
-        font-size:20px;
-        color:#555;
+        font-size: 20px;
+        color: #555;
+    }
+    .news-list{
+        margin-top: 7px;
     }
 }

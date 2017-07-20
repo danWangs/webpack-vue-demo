@@ -1,1 +1,29 @@
 @import "variable.less";
+html,body,#app{
+    height: 100%;
+}
+#app{
+    padding-top: 50px;
+    overflow: auto;
+    background-color: #fafafa;
+}
+.flx-row{
+    display: flex;
+    flex-direction: row;
+    &.flx-between{
+        justify-content: space-between;
+    }
+    &.flx-around{
+        justify-content: space-around;
+    }
+    &.v-center{
+        align-items: center;
+    }
+    &.h-center{
+        justify-content: center;
+    }
+    &.center{
+        align-items: center;
+        justify-content: center;
+    }
+}

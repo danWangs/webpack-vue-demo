@@ -6,6 +6,12 @@ export default (router)=> {
             component(resolve) {
                 require(['../views/index.vue'], resolve);
             }
+        },
+        '/news/:newsId/detail': {
+            name: 'news_details',
+            component(resolve) {
+                require(['../views/newsDetail.vue'], resolve);
+            }
         }
     });
 }

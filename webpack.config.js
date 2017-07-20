@@ -3,7 +3,8 @@ var webpack = require("webpack");
 var ExtractTextPlugin = require("extract-text-webpack-plugin");
 var vue = require("vue-loader");
 var HtmlWebpackPlugin = require('html-webpack-plugin');
-var CopyWebpackPlugin = require('copy-webpack-plugin');
+var CopyWebpackPlugin = require('copy-webpack-plugin');	
+
 
 var isProduction = function () {
     return process.env.NODE_ENV === 'production';
@@ -21,7 +22,7 @@ var plugins = [
         new webpack.ProvidePlugin({
             $: 'webpack-zepto',
             Zepto: "webpack-zepto",
-            "window.Zepto": "webpack-zepto" 
+            "window.Zepto": "webpack-zepto"
         })
 ];
 
