@@ -1,6 +1,11 @@
-<tempalte>
+<template>
     <app-header :header-data="headerData"></app-header>
-</tempalte>
+    <div class="pro-detail-wrapper">
+        <div class="slide">
+
+        </div>
+    </div>
+</template>
 <script type="text/babel">
     export default{
         data(){

@@ -31,7 +31,7 @@ export default (router)=> {
                 require(['../views/list.vue'], resolve);
             }
         },
-        '/proList/:proId': {
+        '/proList/:proId/detail': {
             name: 'pro_detail',
             component(resolve) {
                 require(['../views/proDetail.vue'], resolve);
