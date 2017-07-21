@@ -3,6 +3,7 @@
     <div class="edit-wrapper">
         <div class="btn-list">
             <button class="btn flx-row center" @click="add()"><i class="iconfont">&#xe62e;</i></button>
+            <button class="btn flx-row center" @click="save()">Save</button>
         </div>
         <ul class="form">
             <li v-for="item in msgList">
@@ -61,6 +62,9 @@
             edit(index){
                 this.canEdit = true;
                 this.newMsg = this.msgList[index]
+            },
+            save(){
+                this.canEdit = false;
             }
         },
         created(){
@@ -78,7 +82,8 @@
                 border: 1px solid #eee;
                 background-color: #fff;
                 border-radius: 3px;
-
+                display: inline-block;
+                margin-right: 10px;
                 i{
                     font-size: 14px;
                     color: #666;

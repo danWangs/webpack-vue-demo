@@ -30,5 +30,8 @@ let app = Vue.extend({});
 Vue.component('app-header', (resolve) => {
     require(['./components/header.vue'], resolve);
 });
+Vue.component('scroll-paging', (resolve) => {
+    require(['./components/scrollPaging.vue'], resolve);
+});
 routerMap(router);
 router.start(app, "#app");

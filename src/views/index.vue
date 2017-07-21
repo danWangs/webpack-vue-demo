@@ -49,8 +49,7 @@
 				$.ajax({
 					url:"http://localhost:9090/newsList",
 					success:function (res) {
-
-						res.forEach((item)=> {
+						res.list.forEach((item)=> {
 							let newItem = item;
 							self.newsList.push(newItem)
 						})
