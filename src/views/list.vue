@@ -34,7 +34,7 @@
                 url:"http://localhost:9090/proList",
                 success:(res)=>{
                     res.forEach((item)=>{
-                        this.proList.push(item)
+                        this.proList.push(item);
                     })
                 }
             })
