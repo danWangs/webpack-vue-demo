@@ -1,12 +1,11 @@
 <template>
     <app-header :header-data="headerData"></app-header>
-    <div class="pro-detail-wrapper">
-        <div class="slide">
-
-        </div>
-    </div>
+    <group>
+        <!--<cell title="title" value="value"></cell>-->
+    </group>
 </template>
 <script type="text/babel">
+    import Group from 'vux'
     export default{
         data(){
             return{
@@ -24,6 +23,9 @@
                 let self = this
                 self.proData.proId = transition.to.params.proId
             }
+        },
+        components:{
+            Group
         }
     }
 </script>

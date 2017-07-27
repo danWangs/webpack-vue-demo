@@ -84,8 +84,7 @@ module.exports = {
             test: /\.vue$/,
             loader: 'eslint',
             exclude: /node_modules/
-        },
-        {
+        },{
             test: /\.js$/,
             loader: 'eslint',
             exclude: /(node_modules|libs\\thridpart)/
@@ -93,25 +92,23 @@ module.exports = {
         loaders: [{
             test: /\.vue$/,
             loader: 'vue'
-        },
-        {
+        },{
             test: /\.css$/,
             loader: ExtractTextPlugin.extract('vue-style-loader', 'css-loader')
-        }, {
+        },{
             test: /\.less$/,
             loader: ExtractTextPlugin.extract('vue-style-loader', 'css-loader!less-loader')
-        },
-        {
+        },{
             test: /\.js$/,
             exclude: /node_modules|vue\/dist/,
             loader: 'babel'
         },{
             test: /\.(jpg|png|gif)$/,
             loader: "file-loader?name=images/[hash].[ext]"
-        }, {
+        },{
             test: /\.woff(2)?(\?v=[0-9]\.[0-9]\.[0-9])?$/,
             loader: "url-loader?limit=10000&minetype=application/font-woff"
-        }, {
+        },{
             test: /\.(ttf|eot|svg)(\?v=[0-9]\.[0-9]\.[0-9])?$/,
             loader: "file-loader"
         }]
@@ -140,8 +137,7 @@ module.exports = {
             component: path.join(__dirname, 'src/components'),
             libs: path.join(__dirname, 'src/libs'),
             config: path.join(__dirname, 'src/config'),
-            service:path.join(__dirname,"src/service"),
-            mixins:path.join(__dirname,"src/mixins")
+            service:path.join(__dirname,"src/service")
         }
     },
     plugins: plugins
