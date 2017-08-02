@@ -10,10 +10,7 @@ var isProduction = function () {
     return process.env.NODE_ENV === 'production';
 }
 
-console.log("isProduction:" + isProduction());
-
 var apiPort = process.env.API_PORT || 31956;
-console.log("api port : ", apiPort);
 
 var plugins = [
         //将样式统一发布到style.css中
@@ -111,7 +108,7 @@ module.exports = {
         },{
             test: /\.(ttf|eot|svg)(\?v=[0-9]\.[0-9]\.[0-9])?$/,
             loader: "file-loader"
-        }]
+        }],
     },
     externals: {
         //cnzz: "_czc"
@@ -137,7 +134,9 @@ module.exports = {
             component: path.join(__dirname, 'src/components'),
             libs: path.join(__dirname, 'src/libs'),
             config: path.join(__dirname, 'src/config'),
-            service:path.join(__dirname,"src/service")
+            service:path.join(__dirname,"src/service"),
+            plugins:path.join(__dirname,"src/plugins"),
+            store:path.join(__dirname,"src/store"),
         }
     },
     plugins: plugins

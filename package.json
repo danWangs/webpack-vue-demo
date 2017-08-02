@@ -6,8 +6,8 @@
     "dll": "webpack --progress --colors --config ./webpack.dll.config.js",
     "dev": "webpack --progress --profile --colors",
     "build": "set NODE_ENV=production&&webpack --progress --profile --colors",
-    "watch": "webpack-dev-server --host 0.0.0.0 --inline --progress --colors --port 3000 --content-base src/",
-    "watch8080": "set API_PORT=8080 && webpack-dev-server --host 0.0.0.0 --inline --progress --colors --port 3000 --content-base src/",
+    "watch": "webpack-dev-server --host 0.0.0.0 --inline --progress --colors --port 3005 --content-base src/",
+    "watch8080": "set API_PORT=8080 && webpack-dev-server --host 0.0.0.0 --inline --progress --colors --port 3005 --content-base src/",
     "mock": "nodemon -w ./mock bin_/mock-server.js"
   },
   "author": "",
@@ -44,6 +44,7 @@
     "less-loader": "^2.2.3",
     "lodash": "^4.15.0",
     "object-assign": "^4.0.1",
+    "style-loader": "^0.18.2",
     "template-html-loader": "0.0.3",
     "url-loader": "^0.5.7",
     "vue-hot-reload-api": "^1.2.0",
@@ -58,6 +59,7 @@
   "dependencies": {
     "browser-cookies": "^1.0.8",
     "echarts": "^3.3.2",
+    "element-ui": "^1.4.1",
     "iview": "^2.0.0-rc.19",
     "js-md5": "^0.4.1",
     "postcss-loader": "^1.2.0",
@@ -67,8 +69,6 @@
     "vue-drapload": "^0.1.14",
     "vue-router": "^0.7.11",
     "vue-touch": "^1.0.2",
-    "vue-weui": "^0.3.2",
-    "vux": "^2.5.4",
-    "weui": "^1.1.2"
+    "vuex": "^2.3.1"
   }
 }
