@@ -1,6 +1,6 @@
-let Toast={};
+let ToastCustom={};
 let showToast = false;
-Toast.install=function (Vue,options) {
+ToastCustom.install=function (Vue,options) {
     let opt = {
         defaultType:'bottom',
         duration:'2500'
@@ -8,7 +8,7 @@ Toast.install=function (Vue,options) {
     for(let property in options){
         opt[property] = options[property];
     }
-    Vue.prototype.$toast = (tips,type) => {
+    Vue.prototype.$ToastCustom = (tips,type) => {
         if(type){
             opt.defaultType=type;
         }
@@ -34,8 +34,8 @@ Toast.install=function (Vue,options) {
         }, 2500)
     };
     ['bottom', 'center', 'top'].forEach((type) => {
-        Vue.prototype.$toast[type] = (tips) =>
-            Vue.prototype.$toast(tips,type)
+        Vue.prototype.$ToastCustom[type] = (tips) =>
+            Vue.prototype.$ToastCustom(tips,type)
     })
 }
-module.exports = Toast;
+module.exports = ToastCustom;

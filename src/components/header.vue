@@ -5,13 +5,15 @@
 		<div class="right" v-show="headerData.showRight">{{headerData.rightTitle}}</div>
 	</div>
 	<div v-show="headerData.showTab" class="nav-wrapper">
-		<div class="section nav-boxer">
-			<div class="nav-box">
-				<ul>
-					<li v-for="item in tabList">{{item.tabName}}</li>
-				</ul>
-			</div>
-		</div>
+		<mt-navbar :fixed="false" class="page-part" :selected.sync="selected">
+			<mt-tab-item v-bind:id="item.id"  v-for="item in tabList">{{item.tabName}}</mt-tab-item>
+		</mt-navbar>
+		<!-- tab-container -->
+		<mt-tab-container :active.sync="selected">
+			<mt-tab-container-item v-bind:id="item.id" v-for="item in tabList">
+				<mt-cell v-for="n in 10" :title="'内容 ' + n"></mt-cell>
+			</mt-tab-container-item>
+		</mt-tab-container>
 	</div>
 </template>
 <script type="text/babel">
@@ -21,7 +23,8 @@
 		props: ["headerData"],
 		data(){
 			return{
-				tabList:[]
+				tabList:[],
+				selected:false
 			}
 		},
 		ready(){

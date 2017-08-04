@@ -2,6 +2,7 @@
 <template>
 	<app-header :header-data="headerData"></app-header>
 	<div class="bg">
+
 		<div class="list-wrapper">
 			<ul class="menu-list">
 				<li v-for="item in itemList" v-link="{name:item.linkUrl}">
@@ -17,6 +18,8 @@
 			<!--<template>-->
 				<!--<span ref='countup'></span>-->
 			<!--</template>-->
+			<mt-button type="default">default</mt-button>
+
 			<div class="news-list">
 				<index-news-item :news-list="newsList"></index-news-item>
 			</div>
@@ -54,7 +57,7 @@
 						})
 					}
 				})
-				self.$toast('tips here','bottom');
+				self.$ToastCustom('tips here','bottom');
 			},
 			loadNews(){
 				let self = this

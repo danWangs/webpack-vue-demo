@@ -2,10 +2,12 @@ require("babel-polyfill");
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import routerMap from 'config/routers'
-import Toast from 'plugins/toast'
+import ToastCustom from 'plugins/toast'
 import Vuex from 'vuex'
 import store from './store/store';
-import CountUp from 'countup.js'
+import MintUI from 'mint-ui'
+import 'mint-ui/lib/style.css'
+// import CountUp from 'countup.js'
 
 //import app from './app.vue'
 //import hmt from 'hmt'
@@ -20,8 +22,9 @@ let isDebug = process.env.NODE_ENV !== 'production';
 Vue.config.debug = isDebug;
 Vue.config.silent = !isDebug;
 Vue.use(VueRouter);
-Vue.use(Toast);
+Vue.use(ToastCustom);
 Vue.use(Vuex);
+Vue.use(MintUI);
 // Vue.use(CountUp);
 
 //实例化VueRouter
