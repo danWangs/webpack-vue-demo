@@ -44,7 +44,7 @@
                     showTab:false
                 },
                 proData:{},
-                selected:true
+                selected:'外卖'
             }
         },
         route: {

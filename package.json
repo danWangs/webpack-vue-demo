@@ -8,7 +8,8 @@
     "build": "set NODE_ENV=production&&webpack --progress --profile --colors",
     "watch": "webpack-dev-server --host 0.0.0.0 --inline --progress --colors --port 3005 --content-base src/",
     "watch8080": "set API_PORT=8080 && webpack-dev-server --host 0.0.0.0 --inline --progress --colors --port 3005 --content-base src/",
-    "mock": "nodemon -w ./mock bin_/mock-server.js"
+    "mock": "json-server --watch mock/example.json --port 9090",
+    "mockdemo": "json-server --watch mock/faker-data.js --port 9080"
   },
   "author": "",
   "license": "ISC",
